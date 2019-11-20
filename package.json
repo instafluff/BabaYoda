@@ -1,0 +1,31 @@
+{
+  "name": "babayoda",
+  "version": "1.0.0",
+  "description": "Baby Yoda Meme Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/instafluff/BabaYoda.git"
+  },
+  "keywords": [
+    "Instafluff",
+    "Baby",
+    "Yoda",
+    "Meme",
+    "Generator",
+    "Funny",
+    "Lol"
+  ],
+  "author": "Instafluff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/instafluff/BabaYoda/issues"
+  },
+  "homepage": "https://github.com/instafluff/BabaYoda#readme",
+  "dependencies": {
+    "webwebweb": "^1.1.6"
+  }
+}
