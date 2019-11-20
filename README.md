@@ -12,7 +12,7 @@ We built this Baby Yoda Meme Generator live on Twitch for the Coding Cafe!
 
 ## Instructions ##
 
-Add this as a Browser Source and replace `yourchannel` with your Twitch username!
+Add this as a Browser Source (1024x800) and replace `yourchannel` with your Twitch username!
 
 [https://www.instafluff.tv/BabaYoda?overlay=true&channel=yourchannel](https://www.instafluff.tv/BabaYoda?overlay=true&channel=YOURCHANNEL)
 

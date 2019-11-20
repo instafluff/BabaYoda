@@ -76,6 +76,7 @@
     const rewardId = params.get( "reward" ) || "530fcb74-f038-4cf1-b52a-9c915cbb2331";
     const isTTSEnabled = params.get( "tts" ) || false;
     const ttsVoice = params.get( "voice" ) || "Ivy";
+    let messageId = "";
     let yodaImages = [ "web/yodaAdmire.jpg", "web/yodaAww.jpg", "web/yodaPeekaboo.jpg", "web/yodaSleepy.jpg", "web/yodaStern.jpg", "web/yodaThink.jpg", "web/yodaWant.jpg", "web/yodaWise.jpg" ];
     let yodaMemes = [ "My beer you hold.", "I pooped.", "Hello security camera.", "Me after I give my mom my Christmas list", "My lazy butt reaching for the remote after 32 episodes of The Office", "Me staring at my bedroom ceiling at 3am listening to depressing sad emo music." ];
     let refreshTimer = null;
@@ -134,6 +135,7 @@
    ComfyJS.onCommand = async ( user, command, message, flags, extra ) => {
      if( !rewardId ) {
        if( command === "yoda" ) {
+         messageId = extra.id;
          showMeme( message );
        }
        if( command === "newyoda" ) {
@@ -141,10 +143,17 @@
        }
      }
    };
+   ComfyJS.onMessageDeleted = ( id, extra ) => {
+    if( id === messageId ) {
+      // DELETE THE HIGHLIGHTED MESSAGE
+      location.reload();
+    }
+  };
    ComfyJS.onChat = ( user, message, flags, self, extra ) => {
      if( flags.customReward ) {
        if( extra.customRewardId === rewardId ) {
-        showMeme( message );
+         messageId = extra.id;
+         showMeme( message );
        }
      }
    };
