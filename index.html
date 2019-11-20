@@ -56,6 +56,7 @@
   </head>
   <body>
   <div id="inputskaputs" style="visibility: hidden;">
+    <h1>Baba Yoda by <a href="https://twitch.tv/instafluff">Instafluff</a>, a Baby Yoda Meme Generator!</h1>
     <form>
       <input id="quote-text" type="text" placeholder="Enter Text" size="50">
     </form>
@@ -89,7 +90,9 @@
       let yodaQuote = yodaMemes[ Math.floor( Math.random() * yodaMemes.length ) ];
       $("#motivation-img").attr( "src", yodaImage );
       $("#motivation-quote").text( yodaQuote );
-      $("#motivation-quote").text( $( "#quote-text" ).val() );
+      $("#quote-text").on('input propertychange paste', () => {
+        $("#motivation-quote").text($("#quote-text").val());
+      });
     });
     $("#download-btn").on('click', () => {
       html2canvas(document.querySelector(".motivation"), {
