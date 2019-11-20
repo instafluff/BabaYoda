@@ -27,11 +27,11 @@ If you would just like to generate Baby Yoda memes as an image, just open [https
 
 - Text-To-Speech `tts=true`
 - Speech Voice `voice=Amy`
-- Align to Bottom `bottom=true`
+- Custom Reward ID `reward=530fcb74-f038-4cf1-b52a-9c915cbb2331`
 
 ```
 For example:
-https://www.instafluff.tv/HighlightOfMyChat?channel=instafluff&tts=true&voice=Amy&bottom=true
+https://www.instafluff.tv/BabaYoda?overlay=true&tts=true&voice=Ivy&channel=instafluff&reward=530fcb74-f038-4cf1-b52a-9c915cbb2331
 ```
 
 ## Credits ##

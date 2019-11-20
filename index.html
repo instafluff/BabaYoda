@@ -13,8 +13,8 @@
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"></script>
-    <script src="/web/html2canvas.min.js"></script>
-    <script src="/web/comfy.min.js"></script>
+    <script src="web/html2canvas.min.js"></script>
+    <script src="web/comfy.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600" rel="stylesheet">
     <style>
       body {
@@ -76,7 +76,7 @@
     const rewardId = params.get( "reward" ) || "530fcb74-f038-4cf1-b52a-9c915cbb2331";
     const isTTSEnabled = params.get( "tts" ) || false;
     const ttsVoice = params.get( "voice" ) || "Ivy";
-    let yodaImages = [ "/web/yodaAdmire.jpg", "/web/yodaAww.jpg", "/web/yodaPeekaboo.jpg", "/web/yodaSleepy.jpg", "/web/yodaStern.jpg", "/web/yodaThink.jpg", "/web/yodaWant.jpg", "/web/yodaWise.jpg" ];
+    let yodaImages = [ "web/yodaAdmire.jpg", "web/yodaAww.jpg", "web/yodaPeekaboo.jpg", "web/yodaSleepy.jpg", "web/yodaStern.jpg", "web/yodaThink.jpg", "web/yodaWant.jpg", "web/yodaWise.jpg" ];
     let yodaMemes = [ "My beer you hold.", "I pooped.", "Hello security camera.", "Me after I give my mom my Christmas list", "My lazy butt reaching for the remote after 32 episodes of The Office", "Me staring at my bedroom ceiling at 3am listening to depressing sad emo music." ];
     let refreshTimer = null;
     $(document).ready(() => {
