@@ -72,8 +72,8 @@
   <script type="text/javascript">
     const TTS_BASE = "https://api.streamelements.com/kappa/v2/speech";
     const params = new URLSearchParams( location.search );
-    const channel = params.get( "channel" ) || "instafluff";
-    const rewardId = params.get( "reward" ) || "530fcb74-f038-4cf1-b52a-9c915cbb2331";
+    const channel = params.get( "channel" ) || "";
+    const rewardId = params.get( "reward" ) || "";
     const isTTSEnabled = params.get( "tts" ) || false;
     const ttsVoice = params.get( "voice" ) || "Ivy";
     let messageId = "";
