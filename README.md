@@ -31,6 +31,8 @@ If you would just like to generate Baby Yoda memes as an image, just open [https
 - Speech Voice `voice=Amy`
 - Custom Reward ID `reward=530fcb74-f038-4cf1-b52a-9c915cbb2331`
 
+You can get the Reward ID using this tool I made: https://www.instafluff.tv/TwitchCustomRewardID/?channel=instafluff
+
 ```
 For example:
 https://www.instafluff.tv/BabaYoda?overlay=true&tts=true&voice=Ivy&channel=instafluff&reward=530fcb74-f038-4cf1-b52a-9c915cbb2331
